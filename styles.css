@@ -1,0 +1,115 @@
+.navbar {
+    background-color: blue;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: lightblue;
+    transform: translateY(-3px);
+}
+
+.nav-links a:active {
+    border-bottom: 2px solid blue;
+}
+
+.home-page {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.education-page {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skills-page {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.projects-page {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.experience-page {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-page {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+    width: 200px;
+    height: 120px;
+}
+
+.section-title {
+    text-decoration: underline;
+}
+
+pre {
+    display: inline-block;
+    text-align: left;
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+.code-container {
+    text-align: center;
+}
+
+.mtc-logo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+hr {
+    width: 200px;
+}
+
+.links {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+}
